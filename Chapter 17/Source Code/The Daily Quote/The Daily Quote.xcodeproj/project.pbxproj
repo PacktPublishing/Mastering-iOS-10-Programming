@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		975678DF1D930B4300C9F3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678DE1D930B4300C9F3A8 /* AppDelegate.swift */; };
+		975678E11D930B4300C9F3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678E01D930B4300C9F3A8 /* ViewController.swift */; };
+		975678E41D930B4300C9F3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975678E21D930B4300C9F3A8 /* Main.storyboard */; };
+		975678E61D930B4300C9F3A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975678E51D930B4300C9F3A8 /* Assets.xcassets */; };
+		975678E91D930B4300C9F3A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975678E71D930B4300C9F3A8 /* LaunchScreen.storyboard */; };
+		975678F31D930B8900C9F3A8 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678F21D930B8900C9F3A8 /* Quotes.swift */; };
+		975678FB1D93129800C9F3A8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975678FA1D93129800C9F3A8 /* NotificationCenter.framework */; };
+		975678FE1D93129800C9F3A8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678FD1D93129800C9F3A8 /* TodayViewController.swift */; };
+		975679011D93129800C9F3A8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975678FF1D93129800C9F3A8 /* MainInterface.storyboard */; };
+		975679051D93129800C9F3A8 /* The Daily Quote Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 975678F81D93129800C9F3A8 /* The Daily Quote Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9770FCC31D93204A002D1172 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678F21D930B8900C9F3A8 /* Quotes.swift */; };
+		9777FE331DA056CB0014392C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9777FE321DA056CB0014392C /* Messages.framework */; };
+		9777FE361DA056CB0014392C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777FE351DA056CB0014392C /* MessagesViewController.swift */; };
+		9777FE391DA056CB0014392C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9777FE371DA056CB0014392C /* MainInterface.storyboard */; };
+		9777FE3B1DA056CB0014392C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9777FE3A1DA056CB0014392C /* Assets.xcassets */; };
+		9777FE3F1DA056CB0014392C /* The Daily Quote Messages.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9777FE311DA056CB0014392C /* The Daily Quote Messages.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9777FE431DA056D90014392C /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678F21D930B8900C9F3A8 /* Quotes.swift */; };
+		9777FE461DA0572E0014392C /* CompactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777FE451DA0572E0014392C /* CompactViewController.swift */; };
+		9777FE481DA057CF0014392C /* CompactViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9777FE471DA057CF0014392C /* CompactViewControllerDelegate.swift */; };
+		97BD974F1DA120FE0086FD30 /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD974E1DA120FE0086FD30 /* QuotesTableViewController.swift */; };
+		97C017B41D9AF04000AB254C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C017B31D9AF04000AB254C /* UserNotifications.framework */; };
+		97C017B61D9AF04000AB254C /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C017B51D9AF04000AB254C /* UserNotificationsUI.framework */; };
+		97C017B91D9AF04000AB254C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C017B81D9AF04000AB254C /* NotificationViewController.swift */; };
+		97C017BC1D9AF04000AB254C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C017BA1D9AF04000AB254C /* MainInterface.storyboard */; };
+		97C017C01D9AF04000AB254C /* Quote Content Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97C017B21D9AF04000AB254C /* Quote Content Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97C017C51D9AF2B800AB254C /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678F21D930B8900C9F3A8 /* Quotes.swift */; };
+		97FD90C91D9AD2A200D3C818 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD90C81D9AD2A200D3C818 /* NotificationService.swift */; };
+		97FD90CD1D9AD2A200D3C818 /* Notification Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97FD90C61D9AD2A200D3C818 /* Notification Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97FD90D21D9AD32700D3C818 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975678F21D930B8900C9F3A8 /* Quotes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		975679031D93129800C9F3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975678D31D930B4300C9F3A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 975678F71D93129800C9F3A8;
+			remoteInfo = "The Daily Quote Widget";
+		};
+		9777FE3D1DA056CB0014392C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975678D31D930B4300C9F3A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9777FE301DA056CB0014392C;
+			remoteInfo = "The Daily Quote Messages";
+		};
+		97C017BE1D9AF04000AB254C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975678D31D930B4300C9F3A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C017B11D9AF04000AB254C;
+			remoteInfo = "Quote Content Extension";
+		};
+		97FD90CB1D9AD2A200D3C818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 975678D31D930B4300C9F3A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97FD90C51D9AD2A200D3C818;
+			remoteInfo = "Notification Service";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		975679091D93129800C9F3A8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9777FE3F1DA056CB0014392C /* The Daily Quote Messages.appex in Embed App Extensions */,
+				97FD90CD1D9AD2A200D3C818 /* Notification Service.appex in Embed App Extensions */,
+				975679051D93129800C9F3A8 /* The Daily Quote Widget.appex in Embed App Extensions */,
+				97C017C01D9AF04000AB254C /* Quote Content Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		975678DB1D930B4300C9F3A8 /* The Daily Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Daily Quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975678DE1D930B4300C9F3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		975678E01D930B4300C9F3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		975678E31D930B4300C9F3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		975678E51D930B4300C9F3A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		975678E81D930B4300C9F3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		975678EA1D930B4300C9F3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975678F21D930B8900C9F3A8 /* Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quotes.swift; path = "The Daily Quote/Quotes.swift"; sourceTree = "<group>"; };
+		975678F81D93129800C9F3A8 /* The Daily Quote Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Daily Quote Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975678FA1D93129800C9F3A8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		975678FD1D93129800C9F3A8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		975679001D93129800C9F3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		975679021D93129800C9F3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9777FE311DA056CB0014392C /* The Daily Quote Messages.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Daily Quote Messages.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9777FE321DA056CB0014392C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		9777FE351DA056CB0014392C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		9777FE381DA056CB0014392C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9777FE3A1DA056CB0014392C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9777FE3C1DA056CB0014392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9777FE441DA056E60014392C /* The Daily Quote Messages.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Daily Quote Messages.entitlements"; sourceTree = "<group>"; };
+		9777FE451DA0572E0014392C /* CompactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactViewController.swift; sourceTree = "<group>"; };
+		9777FE471DA057CF0014392C /* CompactViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactViewControllerDelegate.swift; sourceTree = "<group>"; };
+		97BD974E1DA120FE0086FD30 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
+		97C017B21D9AF04000AB254C /* Quote Content Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Quote Content Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C017B31D9AF04000AB254C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		97C017B51D9AF04000AB254C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		97C017B81D9AF04000AB254C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		97C017BB1D9AF04000AB254C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		97C017BD1D9AF04000AB254C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C017C41D9AF2AD00AB254C /* Quote Content Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Quote Content Extension.entitlements"; sourceTree = "<group>"; };
+		97E2E1B51D946A9700D8E8B5 /* The Daily Quote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Daily Quote.entitlements"; sourceTree = "<group>"; };
+		97E2E1B61D946A9E00D8E8B5 /* The Daily Quote Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Daily Quote Widget.entitlements"; sourceTree = "<group>"; };
+		97FD90C61D9AD2A200D3C818 /* Notification Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notification Service.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FD90C81D9AD2A200D3C818 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		97FD90CA1D9AD2A200D3C818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97FD90D11D9AD2BF00D3C818 /* Notification Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Notification Service.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		975678D81D930B4300C9F3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975678F51D93129800C9F3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975678FB1D93129800C9F3A8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9777FE2E1DA056CB0014392C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9777FE331DA056CB0014392C /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C017AF1D9AF04000AB254C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C017B61D9AF04000AB254C /* UserNotificationsUI.framework in Frameworks */,
+				97C017B41D9AF04000AB254C /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FD90C31D9AD2A200D3C818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		975678D21D930B4300C9F3A8 = {
+			isa = PBXGroup;
+			children = (
+				9770FCC41D9321BF002D1172 /* Shared */,
+				975678DD1D930B4300C9F3A8 /* The Daily Quote */,
+				975678FC1D93129800C9F3A8 /* The Daily Quote Widget */,
+				97FD90C71D9AD2A200D3C818 /* Notification Service */,
+				97C017B71D9AF04000AB254C /* Quote Content Extension */,
+				9777FE341DA056CB0014392C /* The Daily Quote Messages */,
+				975678F91D93129800C9F3A8 /* Frameworks */,
+				975678DC1D930B4300C9F3A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		975678DC1D930B4300C9F3A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				975678DB1D930B4300C9F3A8 /* The Daily Quote.app */,
+				975678F81D93129800C9F3A8 /* The Daily Quote Widget.appex */,
+				97FD90C61D9AD2A200D3C818 /* Notification Service.appex */,
+				97C017B21D9AF04000AB254C /* Quote Content Extension.appex */,
+				9777FE311DA056CB0014392C /* The Daily Quote Messages.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		975678DD1D930B4300C9F3A8 /* The Daily Quote */ = {
+			isa = PBXGroup;
+			children = (
+				97E2E1B51D946A9700D8E8B5 /* The Daily Quote.entitlements */,
+				975678DE1D930B4300C9F3A8 /* AppDelegate.swift */,
+				975678E01D930B4300C9F3A8 /* ViewController.swift */,
+				975678E21D930B4300C9F3A8 /* Main.storyboard */,
+				975678E51D930B4300C9F3A8 /* Assets.xcassets */,
+				975678E71D930B4300C9F3A8 /* LaunchScreen.storyboard */,
+				975678EA1D930B4300C9F3A8 /* Info.plist */,
+			);
+			path = "The Daily Quote";
+			sourceTree = "<group>";
+		};
+		975678F91D93129800C9F3A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				975678FA1D93129800C9F3A8 /* NotificationCenter.framework */,
+				97C017B31D9AF04000AB254C /* UserNotifications.framework */,
+				97C017B51D9AF04000AB254C /* UserNotificationsUI.framework */,
+				9777FE321DA056CB0014392C /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		975678FC1D93129800C9F3A8 /* The Daily Quote Widget */ = {
+			isa = PBXGroup;
+			children = (
+				97E2E1B61D946A9E00D8E8B5 /* The Daily Quote Widget.entitlements */,
+				975678FD1D93129800C9F3A8 /* TodayViewController.swift */,
+				975678FF1D93129800C9F3A8 /* MainInterface.storyboard */,
+				975679021D93129800C9F3A8 /* Info.plist */,
+			);
+			path = "The Daily Quote Widget";
+			sourceTree = "<group>";
+		};
+		9770FCC41D9321BF002D1172 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				975678F21D930B8900C9F3A8 /* Quotes.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		9777FE341DA056CB0014392C /* The Daily Quote Messages */ = {
+			isa = PBXGroup;
+			children = (
+				9777FE441DA056E60014392C /* The Daily Quote Messages.entitlements */,
+				9777FE351DA056CB0014392C /* MessagesViewController.swift */,
+				9777FE371DA056CB0014392C /* MainInterface.storyboard */,
+				9777FE3A1DA056CB0014392C /* Assets.xcassets */,
+				9777FE3C1DA056CB0014392C /* Info.plist */,
+				9777FE451DA0572E0014392C /* CompactViewController.swift */,
+				9777FE471DA057CF0014392C /* CompactViewControllerDelegate.swift */,
+				97BD974E1DA120FE0086FD30 /* QuotesTableViewController.swift */,
+			);
+			path = "The Daily Quote Messages";
+			sourceTree = "<group>";
+		};
+		97C017B71D9AF04000AB254C /* Quote Content Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97C017C41D9AF2AD00AB254C /* Quote Content Extension.entitlements */,
+				97C017B81D9AF04000AB254C /* NotificationViewController.swift */,
+				97C017BA1D9AF04000AB254C /* MainInterface.storyboard */,
+				97C017BD1D9AF04000AB254C /* Info.plist */,
+			);
+			path = "Quote Content Extension";
+			sourceTree = "<group>";
+		};
+		97FD90C71D9AD2A200D3C818 /* Notification Service */ = {
+			isa = PBXGroup;
+			children = (
+				97FD90D11D9AD2BF00D3C818 /* Notification Service.entitlements */,
+				97FD90C81D9AD2A200D3C818 /* NotificationService.swift */,
+				97FD90CA1D9AD2A200D3C818 /* Info.plist */,
+			);
+			path = "Notification Service";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		975678DA1D930B4300C9F3A8 /* The Daily Quote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975678ED1D930B4300C9F3A8 /* Build configuration list for PBXNativeTarget "The Daily Quote" */;
+			buildPhases = (
+				975678D71D930B4300C9F3A8 /* Sources */,
+				975678D81D930B4300C9F3A8 /* Frameworks */,
+				975678D91D930B4300C9F3A8 /* Resources */,
+				975679091D93129800C9F3A8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				975679041D93129800C9F3A8 /* PBXTargetDependency */,
+				97FD90CC1D9AD2A200D3C818 /* PBXTargetDependency */,
+				97C017BF1D9AF04000AB254C /* PBXTargetDependency */,
+				9777FE3E1DA056CB0014392C /* PBXTargetDependency */,
+			);
+			name = "The Daily Quote";
+			productName = "The Daily Quote";
+			productReference = 975678DB1D930B4300C9F3A8 /* The Daily Quote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		975678F71D93129800C9F3A8 /* The Daily Quote Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975679061D93129800C9F3A8 /* Build configuration list for PBXNativeTarget "The Daily Quote Widget" */;
+			buildPhases = (
+				975678F41D93129800C9F3A8 /* Sources */,
+				975678F51D93129800C9F3A8 /* Frameworks */,
+				975678F61D93129800C9F3A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Daily Quote Widget";
+			productName = "The Daily Quote Widget";
+			productReference = 975678F81D93129800C9F3A8 /* The Daily Quote Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9777FE301DA056CB0014392C /* The Daily Quote Messages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9777FE421DA056CB0014392C /* Build configuration list for PBXNativeTarget "The Daily Quote Messages" */;
+			buildPhases = (
+				9777FE2D1DA056CB0014392C /* Sources */,
+				9777FE2E1DA056CB0014392C /* Frameworks */,
+				9777FE2F1DA056CB0014392C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Daily Quote Messages";
+			productName = "The Daily Quote Messages";
+			productReference = 9777FE311DA056CB0014392C /* The Daily Quote Messages.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+		97C017B11D9AF04000AB254C /* Quote Content Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C017C31D9AF04000AB254C /* Build configuration list for PBXNativeTarget "Quote Content Extension" */;
+			buildPhases = (
+				97C017AE1D9AF04000AB254C /* Sources */,
+				97C017AF1D9AF04000AB254C /* Frameworks */,
+				97C017B01D9AF04000AB254C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quote Content Extension";
+			productName = "Quote Content Extension";
+			productReference = 97C017B21D9AF04000AB254C /* Quote Content Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		97FD90C51D9AD2A200D3C818 /* Notification Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FD90D01D9AD2A200D3C818 /* Build configuration list for PBXNativeTarget "Notification Service" */;
+			buildPhases = (
+				97FD90C21D9AD2A200D3C818 /* Sources */,
+				97FD90C31D9AD2A200D3C818 /* Frameworks */,
+				97FD90C41D9AD2A200D3C818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notification Service";
+			productName = "Notification Service";
+			productReference = 97FD90C61D9AD2A200D3C818 /* Notification Service.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		975678D31D930B4300C9F3A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Donny Wals";
+				TargetAttributes = {
+					975678DA1D930B4300C9F3A8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					975678F71D93129800C9F3A8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9777FE301DA056CB0014392C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					97C017B11D9AF04000AB254C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					97FD90C51D9AD2A200D3C818 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 975678D61D930B4300C9F3A8 /* Build configuration list for PBXProject "The Daily Quote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 975678D21D930B4300C9F3A8;
+			productRefGroup = 975678DC1D930B4300C9F3A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				975678DA1D930B4300C9F3A8 /* The Daily Quote */,
+				975678F71D93129800C9F3A8 /* The Daily Quote Widget */,
+				97FD90C51D9AD2A200D3C818 /* Notification Service */,
+				97C017B11D9AF04000AB254C /* Quote Content Extension */,
+				9777FE301DA056CB0014392C /* The Daily Quote Messages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		975678D91D930B4300C9F3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975678E91D930B4300C9F3A8 /* LaunchScreen.storyboard in Resources */,
+				975678E61D930B4300C9F3A8 /* Assets.xcassets in Resources */,
+				975678E41D930B4300C9F3A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975678F61D93129800C9F3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975679011D93129800C9F3A8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9777FE2F1DA056CB0014392C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9777FE3B1DA056CB0014392C /* Assets.xcassets in Resources */,
+				9777FE391DA056CB0014392C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C017B01D9AF04000AB254C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C017BC1D9AF04000AB254C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FD90C41D9AD2A200D3C818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		975678D71D930B4300C9F3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975678E11D930B4300C9F3A8 /* ViewController.swift in Sources */,
+				975678DF1D930B4300C9F3A8 /* AppDelegate.swift in Sources */,
+				975678F31D930B8900C9F3A8 /* Quotes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975678F41D93129800C9F3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9770FCC31D93204A002D1172 /* Quotes.swift in Sources */,
+				975678FE1D93129800C9F3A8 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9777FE2D1DA056CB0014392C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD974F1DA120FE0086FD30 /* QuotesTableViewController.swift in Sources */,
+				9777FE461DA0572E0014392C /* CompactViewController.swift in Sources */,
+				9777FE431DA056D90014392C /* Quotes.swift in Sources */,
+				9777FE361DA056CB0014392C /* MessagesViewController.swift in Sources */,
+				9777FE481DA057CF0014392C /* CompactViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C017AE1D9AF04000AB254C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C017C51D9AF2B800AB254C /* Quotes.swift in Sources */,
+				97C017B91D9AF04000AB254C /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FD90C21D9AD2A200D3C818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FD90D21D9AD32700D3C818 /* Quotes.swift in Sources */,
+				97FD90C91D9AD2A200D3C818 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		975679041D93129800C9F3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 975678F71D93129800C9F3A8 /* The Daily Quote Widget */;
+			targetProxy = 975679031D93129800C9F3A8 /* PBXContainerItemProxy */;
+		};
+		9777FE3E1DA056CB0014392C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9777FE301DA056CB0014392C /* The Daily Quote Messages */;
+			targetProxy = 9777FE3D1DA056CB0014392C /* PBXContainerItemProxy */;
+		};
+		97C017BF1D9AF04000AB254C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97C017B11D9AF04000AB254C /* Quote Content Extension */;
+			targetProxy = 97C017BE1D9AF04000AB254C /* PBXContainerItemProxy */;
+		};
+		97FD90CC1D9AD2A200D3C818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97FD90C51D9AD2A200D3C818 /* Notification Service */;
+			targetProxy = 97FD90CB1D9AD2A200D3C818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		975678E21D930B4300C9F3A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975678E31D930B4300C9F3A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		975678E71D930B4300C9F3A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975678E81D930B4300C9F3A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		975678FF1D93129800C9F3A8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				975679001D93129800C9F3A8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		9777FE371DA056CB0014392C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9777FE381DA056CB0014392C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		97C017BA1D9AF04000AB254C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C017BB1D9AF04000AB254C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		975678EB1D930B4300C9F3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		975678EC1D930B4300C9F3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		975678EE1D930B4300C9F3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote/The Daily Quote.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.TheDailyQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		975678EF1D930B4300C9F3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote/The Daily Quote.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.TheDailyQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		975679071D93129800C9F3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote Widget/The Daily Quote Widget.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.TheDailyQuote.TheDailyQuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		975679081D93129800C9F3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote Widget/The Daily Quote Widget.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.TheDailyQuote.TheDailyQuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9777FE401DA056CB0014392C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote Messages/The Daily Quote Messages.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote Messages/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.The-Daily-Quote-Messages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9777FE411DA056CB0014392C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = "The Daily Quote Messages/The Daily Quote Messages.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "The Daily Quote Messages/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.The-Daily-Quote-Messages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		97C017C11D9AF04000AB254C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Quote Content Extension/Quote Content Extension.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "Quote Content Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.Quote-Content-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		97C017C21D9AF04000AB254C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Quote Content Extension/Quote Content Extension.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "Quote Content Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.Quote-Content-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		97FD90CE1D9AD2A200D3C818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notification Service/Notification Service.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "Notification Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.Notification-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		97FD90CF1D9AD2A200D3C818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notification Service/Notification Service.entitlements";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = "Notification Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donnywals.TheDailyQuote.Notification-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		975678D61D930B4300C9F3A8 /* Build configuration list for PBXProject "The Daily Quote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975678EB1D930B4300C9F3A8 /* Debug */,
+				975678EC1D930B4300C9F3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975678ED1D930B4300C9F3A8 /* Build configuration list for PBXNativeTarget "The Daily Quote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975678EE1D930B4300C9F3A8 /* Debug */,
+				975678EF1D930B4300C9F3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975679061D93129800C9F3A8 /* Build configuration list for PBXNativeTarget "The Daily Quote Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975679071D93129800C9F3A8 /* Debug */,
+				975679081D93129800C9F3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9777FE421DA056CB0014392C /* Build configuration list for PBXNativeTarget "The Daily Quote Messages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9777FE401DA056CB0014392C /* Debug */,
+				9777FE411DA056CB0014392C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C017C31D9AF04000AB254C /* Build configuration list for PBXNativeTarget "Quote Content Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C017C11D9AF04000AB254C /* Debug */,
+				97C017C21D9AF04000AB254C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FD90D01D9AD2A200D3C818 /* Build configuration list for PBXNativeTarget "Notification Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FD90CE1D9AD2A200D3C818 /* Debug */,
+				97FD90CF1D9AD2A200D3C818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 975678D31D930B4300C9F3A8 /* Project object */;
+}

@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97B623571DAA50A500CFE847 /* SendMessageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B623561DAA50A500CFE847 /* SendMessageIntentHandler.swift */; };
+		97BD975F1DA917F00086FD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD975E1DA917F00086FD30 /* AppDelegate.swift */; };
+		97BD97611DA917F00086FD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD97601DA917F00086FD30 /* ViewController.swift */; };
+		97BD97641DA917F10086FD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BD97621DA917F10086FD30 /* Main.storyboard */; };
+		97BD97661DA917F10086FD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BD97651DA917F10086FD30 /* Assets.xcassets */; };
+		97BD97691DA917F10086FD30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BD97671DA917F10086FD30 /* LaunchScreen.storyboard */; };
+		97BD97771DA918580086FD30 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD97761DA918580086FD30 /* IntentHandler.swift */; };
+		97BD97801DA918580086FD30 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BD977F1DA918580086FD30 /* IntentsUI.framework */; };
+		97BD97831DA918580086FD30 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BD97821DA918580086FD30 /* IntentViewController.swift */; };
+		97BD97861DA918580086FD30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BD97841DA918580086FD30 /* MainInterface.storyboard */; };
+		97BD978A1DA918580086FD30 /* MessagingExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97BD977D1DA918580086FD30 /* MessagingExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		97BD978D1DA918580086FD30 /* MessagingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97BD97741DA918580086FD30 /* MessagingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97BD97881DA918580086FD30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97BD97531DA917F00086FD30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97BD977C1DA918580086FD30;
+			remoteInfo = MessagingExtensionUI;
+		};
+		97BD978B1DA918580086FD30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97BD97531DA917F00086FD30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97BD97731DA918580086FD30;
+			remoteInfo = MessagingExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97BD97941DA918580086FD30 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				97BD978A1DA918580086FD30 /* MessagingExtensionUI.appex in Embed App Extensions */,
+				97BD978D1DA918580086FD30 /* MessagingExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		97B623561DAA50A500CFE847 /* SendMessageIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageIntentHandler.swift; sourceTree = "<group>"; };
+		97B623581DAA56FE00CFE847 /* SiriKitMessaging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitMessaging.entitlements; sourceTree = "<group>"; };
+		97BD975B1DA917F00086FD30 /* SiriKitMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BD975E1DA917F00086FD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97BD97601DA917F00086FD30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97BD97631DA917F10086FD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97BD97651DA917F10086FD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97BD97681DA917F10086FD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97BD976A1DA917F10086FD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BD97741DA918580086FD30 /* MessagingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagingExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BD97761DA918580086FD30 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		97BD97781DA918580086FD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BD977D1DA918580086FD30 /* MessagingExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagingExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BD977F1DA918580086FD30 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		97BD97821DA918580086FD30 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		97BD97851DA918580086FD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		97BD97871DA918580086FD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97BD97581DA917F00086FD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD97711DA918580086FD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD977A1DA918580086FD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD97801DA918580086FD30 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97BD97521DA917F00086FD30 = {
+			isa = PBXGroup;
+			children = (
+				97BD975D1DA917F00086FD30 /* SiriKitMessaging */,
+				97BD97751DA918580086FD30 /* MessagingExtension */,
+				97BD97811DA918580086FD30 /* MessagingExtensionUI */,
+				97BD977E1DA918580086FD30 /* Frameworks */,
+				97BD975C1DA917F00086FD30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97BD975C1DA917F00086FD30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97BD975B1DA917F00086FD30 /* SiriKitMessaging.app */,
+				97BD97741DA918580086FD30 /* MessagingExtension.appex */,
+				97BD977D1DA918580086FD30 /* MessagingExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97BD975D1DA917F00086FD30 /* SiriKitMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				97B623581DAA56FE00CFE847 /* SiriKitMessaging.entitlements */,
+				97BD975E1DA917F00086FD30 /* AppDelegate.swift */,
+				97BD97601DA917F00086FD30 /* ViewController.swift */,
+				97BD97621DA917F10086FD30 /* Main.storyboard */,
+				97BD97651DA917F10086FD30 /* Assets.xcassets */,
+				97BD97671DA917F10086FD30 /* LaunchScreen.storyboard */,
+				97BD976A1DA917F10086FD30 /* Info.plist */,
+			);
+			path = SiriKitMessaging;
+			sourceTree = "<group>";
+		};
+		97BD97751DA918580086FD30 /* MessagingExtension */ = {
+			isa = PBXGroup;
+			children = (
+				97BD97761DA918580086FD30 /* IntentHandler.swift */,
+				97BD97781DA918580086FD30 /* Info.plist */,
+				97B623561DAA50A500CFE847 /* SendMessageIntentHandler.swift */,
+			);
+			path = MessagingExtension;
+			sourceTree = "<group>";
+		};
+		97BD977E1DA918580086FD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97BD977F1DA918580086FD30 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97BD97811DA918580086FD30 /* MessagingExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				97BD97821DA918580086FD30 /* IntentViewController.swift */,
+				97BD97841DA918580086FD30 /* MainInterface.storyboard */,
+				97BD97871DA918580086FD30 /* Info.plist */,
+			);
+			path = MessagingExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97BD975A1DA917F00086FD30 /* SiriKitMessaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BD976D1DA917F10086FD30 /* Build configuration list for PBXNativeTarget "SiriKitMessaging" */;
+			buildPhases = (
+				97BD97571DA917F00086FD30 /* Sources */,
+				97BD97581DA917F00086FD30 /* Frameworks */,
+				97BD97591DA917F00086FD30 /* Resources */,
+				97BD97941DA918580086FD30 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97BD97891DA918580086FD30 /* PBXTargetDependency */,
+				97BD978C1DA918580086FD30 /* PBXTargetDependency */,
+			);
+			name = SiriKitMessaging;
+			productName = SiriKitMessaging;
+			productReference = 97BD975B1DA917F00086FD30 /* SiriKitMessaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97BD97731DA918580086FD30 /* MessagingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BD97911DA918580086FD30 /* Build configuration list for PBXNativeTarget "MessagingExtension" */;
+			buildPhases = (
+				97BD97701DA918580086FD30 /* Sources */,
+				97BD97711DA918580086FD30 /* Frameworks */,
+				97BD97721DA918580086FD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagingExtension;
+			productName = MessagingExtension;
+			productReference = 97BD97741DA918580086FD30 /* MessagingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		97BD977C1DA918580086FD30 /* MessagingExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97BD978E1DA918580086FD30 /* Build configuration list for PBXNativeTarget "MessagingExtensionUI" */;
+			buildPhases = (
+				97BD97791DA918580086FD30 /* Sources */,
+				97BD977A1DA918580086FD30 /* Frameworks */,
+				97BD977B1DA918580086FD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagingExtensionUI;
+			productName = MessagingExtensionUI;
+			productReference = 97BD977D1DA918580086FD30 /* MessagingExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97BD97531DA917F00086FD30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = DonnyWals;
+				TargetAttributes = {
+					97BD975A1DA917F00086FD30 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					97BD97731DA918580086FD30 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+					};
+					97BD977C1DA918580086FD30 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JMM8JMG3H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97BD97561DA917F00086FD30 /* Build configuration list for PBXProject "SiriKitMessaging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97BD97521DA917F00086FD30;
+			productRefGroup = 97BD975C1DA917F00086FD30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97BD975A1DA917F00086FD30 /* SiriKitMessaging */,
+				97BD97731DA918580086FD30 /* MessagingExtension */,
+				97BD977C1DA918580086FD30 /* MessagingExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97BD97591DA917F00086FD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD97691DA917F10086FD30 /* LaunchScreen.storyboard in Resources */,
+				97BD97661DA917F10086FD30 /* Assets.xcassets in Resources */,
+				97BD97641DA917F10086FD30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD97721DA918580086FD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD977B1DA918580086FD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD97861DA918580086FD30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97BD97571DA917F00086FD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD97611DA917F00086FD30 /* ViewController.swift in Sources */,
+				97BD975F1DA917F00086FD30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD97701DA918580086FD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B623571DAA50A500CFE847 /* SendMessageIntentHandler.swift in Sources */,
+				97BD97771DA918580086FD30 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD97791DA918580086FD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD97831DA918580086FD30 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97BD97891DA918580086FD30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97BD977C1DA918580086FD30 /* MessagingExtensionUI */;
+			targetProxy = 97BD97881DA918580086FD30 /* PBXContainerItemProxy */;
+		};
+		97BD978C1DA918580086FD30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97BD97731DA918580086FD30 /* MessagingExtension */;
+			targetProxy = 97BD978B1DA918580086FD30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97BD97621DA917F10086FD30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97BD97631DA917F10086FD30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97BD97671DA917F10086FD30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97BD97681DA917F10086FD30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97BD97841DA918580086FD30 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97BD97851DA918580086FD30 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97BD976B1DA917F10086FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97BD976C1DA917F10086FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97BD976E1DA917F10086FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitMessaging/SiriKitMessaging.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = SiriKitMessaging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		97BD976F1DA917F10086FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitMessaging/SiriKitMessaging.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = SiriKitMessaging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		97BD978F1DA918580086FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = MessagingExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging.MessagingExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		97BD97901DA918580086FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = MessagingExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging.MessagingExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		97BD97921DA918580086FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = MessagingExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging.MessagingExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		97BD97931DA918580086FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = MessagingExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donny.SiriKitMessaging.MessagingExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97BD97561DA917F00086FD30 /* Build configuration list for PBXProject "SiriKitMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BD976B1DA917F10086FD30 /* Debug */,
+				97BD976C1DA917F10086FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BD976D1DA917F10086FD30 /* Build configuration list for PBXNativeTarget "SiriKitMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BD976E1DA917F10086FD30 /* Debug */,
+				97BD976F1DA917F10086FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BD978E1DA918580086FD30 /* Build configuration list for PBXNativeTarget "MessagingExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BD978F1DA918580086FD30 /* Debug */,
+				97BD97901DA918580086FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97BD97911DA918580086FD30 /* Build configuration list for PBXNativeTarget "MessagingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BD97921DA918580086FD30 /* Debug */,
+				97BD97931DA918580086FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97BD97531DA917F00086FD30 /* Project object */;
+}

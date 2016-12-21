@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="The_Daily_Quote_Messages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Compact View Controller-->
+        <scene sceneID="bIy-Tt-JjH">
+            <objects>
+                <viewController storyboardIdentifier="CompactViewController" id="doO-75-wWh" customClass="CompactViewController" customModule="The_Daily_Quote_Messages" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mAC-87-uZB"/>
+                        <viewControllerLayoutGuide type="bottom" id="1xh-XD-8dv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yT-Zl-hGv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOV-qT-XOk">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Af7-0j-MRN">
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareTapped" destination="doO-75-wWh" eventType="touchUpInside" id="aWY-sk-6ZJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5Y-n5-JIz">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="j5Y-n5-JIz" secondAttribute="leading" id="0dt-OL-SjH"/>
+                            <constraint firstItem="Af7-0j-MRN" firstAttribute="centerX" secondItem="j5Y-n5-JIz" secondAttribute="centerX" id="AOF-Hi-uMX"/>
+                            <constraint firstItem="Af7-0j-MRN" firstAttribute="top" secondItem="j5Y-n5-JIz" secondAttribute="bottom" constant="8" id="H3C-bm-fEE"/>
+                            <constraint firstItem="yOV-qT-XOk" firstAttribute="top" secondItem="mAC-87-uZB" secondAttribute="bottom" id="H79-ll-VL4"/>
+                            <constraint firstItem="j5Y-n5-JIz" firstAttribute="top" secondItem="yOV-qT-XOk" secondAttribute="bottom" constant="8" id="WDT-oN-OMe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yOV-qT-XOk" secondAttribute="trailing" id="Wdd-Nn-1YD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yOV-qT-XOk" secondAttribute="leading" id="dgp-DN-3TX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j5Y-n5-JIz" secondAttribute="trailing" id="mBw-2j-boe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="creatorLabel" destination="j5Y-n5-JIz" id="n5A-KI-4HA"/>
+                        <outlet property="quoteLabel" destination="yOV-qT-XOk" id="qAo-U0-vlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRN-BC-vU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="183"/>
+        </scene>
+        <!--Quotes Table View Controller-->
+        <scene sceneID="85b-D9-hL3">
+            <objects>
+                <tableViewController storyboardIdentifier="QuotesTableViewController" id="kB5-HN-UrU" customClass="QuotesTableViewController" customModule="The_Daily_Quote_Messages" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Bb-ex-jK3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuoteTableViewCell" textLabel="ahm-fu-4nM" detailTextLabel="h1E-qU-SPU" style="IBUITableViewCellStyleSubtitle" id="3Ck-G6-ybR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ck-G6-ybR" id="Vn4-Im-sIg">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ahm-fu-4nM">
+                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h1E-qU-SPU">
+                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kB5-HN-UrU" id="wmZ-Ao-PhK"/>
+                            <outlet property="delegate" destination="kB5-HN-UrU" id="bAN-lq-DS9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JbH-Rj-9gQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473" y="182"/>
+        </scene>
+    </scenes>
+</document>

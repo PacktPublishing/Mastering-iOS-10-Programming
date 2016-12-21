@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Daily_Quote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx9-hQ-EJ0">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The creator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgi-No-cgg">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBZ-ja-3qx">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Enable notifications"/>
+                                <connections>
+                                    <action selector="enableNotificationsTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVv-mI-miX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable notifications to receive a daily notification containing the latest quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvS-lo-iAa">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mvS-lo-iAa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pw-eN-ADr"/>
+                            <constraint firstItem="cBZ-ja-3qx" firstAttribute="top" secondItem="mvS-lo-iAa" secondAttribute="bottom" constant="8" id="3ed-Ry-9LE"/>
+                            <constraint firstItem="Kgi-No-cgg" firstAttribute="top" secondItem="Wx9-hQ-EJ0" secondAttribute="bottom" constant="7.5" id="DjS-Jk-fcl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wx9-hQ-EJ0" secondAttribute="trailing" id="Fmz-bF-ugY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mvS-lo-iAa" secondAttribute="leading" id="InH-bg-Uzg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Wx9-hQ-EJ0" secondAttribute="leading" id="JCV-nA-Ou6"/>
+                            <constraint firstItem="Kgi-No-cgg" firstAttribute="centerX" secondItem="Wx9-hQ-EJ0" secondAttribute="centerX" id="Oft-FJ-GEI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cBZ-ja-3qx" secondAttribute="bottom" constant="8" id="Og8-jB-RRI"/>
+                            <constraint firstItem="Wx9-hQ-EJ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZdY-MU-NJ4"/>
+                            <constraint firstItem="Wx9-hQ-EJ0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bcV-qQ-NVv"/>
+                            <constraint firstItem="cBZ-ja-3qx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8S-4Q-GCf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mvS-lo-iAa" secondAttribute="trailing" id="rho-Lm-WH4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableNotificationsButton" destination="cBZ-ja-3qx" id="TZZ-bn-Inr"/>
+                        <outlet property="notificationSugestionLabel" destination="mvS-lo-iAa" id="iuz-c5-Ums"/>
+                        <outlet property="quoteCreator" destination="Kgi-No-cgg" id="vIt-eW-9gk"/>
+                        <outlet property="quoteLabel" destination="Wx9-hQ-EJ0" id="6js-jw-6ua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
