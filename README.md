@@ -7,7 +7,7 @@ Written with the latest Swift version and following the latest Swift API design 
 
 Within the book, you will build a couple of small applications that resemble applications you might want to build in the real world. You will be reading a mix of thorough background information and practical examples, so you’ll know how to make use of a certain technique right away while you also get a great understanding of the how and why.
 ##Instructions and Navigations
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
+All of the code is organized into folders. For example, Chapter 02.
 
 
 
@@ -32,11 +32,13 @@ Xcode 8. In order to test all of the code samples in this book, you'll need an i
 runs iOS 10 and a paid subscription to Apple's developer program.
 
 ##Related Products
+
 * [iOS 10 Programming Cookbook](https://www.packtpub.com/application-development/ios-10-programming-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781786460981)
 
 * [iOS 10 Programming for Beginners](https://www.packtpub.com/application-development/ios-10-programming-beginners?utm_source=github&utm_medium=repository&utm_campaign=9781786464507)
 
 * [Learning iOS Penetration Testing](https://www.packtpub.com/networking-and-servers/learning-ios-penetration-testing?utm_source=github&utm_medium=repository&utm_campaign=9781785883255)
+
+
 ###Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
-"# Mastering-iOS-10-Programming" 
